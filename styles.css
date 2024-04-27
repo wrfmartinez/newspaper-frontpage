@@ -4,39 +4,67 @@
 
 header {
   grid-area: header;
-  height: 100px;
 }
 
 nav {
   grid-area: nav-links;
-  height: 100px;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
+  padding: 10px;
 }
 
 main {
   display: grid;
   grid-area: articles;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 31% 38% 31%;
   border: 1px solid black;
 }
 
 img {
-  width: 100%;
+  width: 90%;
 }
 
 .newspaper-title {
   text-align: center;
   font-size: 48px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #363636;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .article-post {
+  text-align: center;
   border: 1px solid black;
+  padding: 10px;
 }
 
 .article-post:last-child {
-  width: 150%;
+  width: 181.6%;
+}
+
+.article-title {
+  font-style: italic;
+}
+
+.article-body-text {
+  text-align: left;
 }
 
 .grid-container {
